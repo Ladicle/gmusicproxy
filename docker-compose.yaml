@@ -1,0 +1,9 @@
+version: '2'
+services:
+  gmusicproxy:
+    build: .
+    ports:
+      - "9999:9999"
+    volumes:
+      - "$PWD/config:/root/.config/gmusicproxy.cfg"
+    restart: always
